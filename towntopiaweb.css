@@ -1,0 +1,324 @@
+
+body {
+    margin: 0;
+    background: url(media/dark.png) no-repeat 50% fixed;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+#discord {
+    background-image: url(https://i.imgur.com/WqFrtvm.png);
+}
+
+#store {
+    background-image: url(https://i.imgur.com/iti6EmE.png);
+}
+
+#verify {
+    background-image: url(https://i.imgur.com/tPXFkP8.png);
+}
+
+#admin {
+    background-image: url(https://i.imgur.com/6Y5xZz6.png);
+}
+#tutorial {
+    background-image: url(https://i.imgur.com/QGwIUTN.png);                                
+}
+
+.main #discordh .button:hover {                                 
+    transition: 0.3s;
+    background-size: 200px;
+}
+
+.button {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 190px;
+    cursor: pointer;
+    height: 180px;
+    transition: background-size .2s ease;
+    width: 200px;
+    margin-top: -20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #37393e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #37393e;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #37393e;
+    color: white;
+  }
+
+li {
+  float: right;
+}
+
+li .a2 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #313336;
+}
+
+li .a2:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: #06558a;
+}
+
+h1 h2 h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h4 {
+    margin:3;
+}
+
+.main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-top: 140px;
+    max-width: 660px;
+}
+
+.mainsub {
+    position: relative;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 3px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-top: 100px;
+    max-width: 660px;
+}
+
+.error {
+    border-radius: .25rem;
+    background-color: #FFCDD2;
+    margin: 3px;
+    color: #a94442;
+}
+
+.success {
+    border-radius: .25rem;
+    background-color: #C8E6C9;
+    margin: 3px;
+    color: #3c763d;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    color: #0663c7;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
+
+.form-text {
+    display: block;
+    margin-top: .25rem;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.text-danger {
+    color: #dc3545!important;
+}
+
+.text-success {
+    color: #28a745!important;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+.table-responsive>.table-bordered {
+    border: 0;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 2px;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd):hover {
+    background-color: rgba(0,0,0,.07);
+}
+
+*[data-href] {
+    cursor: pointer;
+}

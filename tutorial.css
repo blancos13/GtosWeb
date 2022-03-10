@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    background: url(media/background.jpg) no-repeat 50% fixed;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}

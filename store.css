@@ -1,0 +1,993 @@
+/*!
+ * Custom CSS defined for web
+ * Author: Ali (ali.ejaz@ubisoft.com)
+ *
+ */
+ @font-face {
+    font-family: CenturyGothic;
+    src: url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/fonts/GOTHICB.TTF);
+}
+
+@font-face {
+    font-family: CenturyGothicNormal;
+    src: url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/fonts/GOTHIC.TTF);
+}
+
+body {
+    margin: 0;
+    background: url(media/dark.png) no-repeat 50% fixed;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: CenturyGothic, Verdana, Arial;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content a:hover, .content a:focus {
+    text-decoration: none;
+    filter: alpha(opacity=65);
+    opacity: .65;
+}
+
+#header .logo a img {
+    width: 203px;
+}
+
+#wrap {
+    background: #fff url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-header-bg-sky.png) repeat-x 0 0;
+    background-size: 50%;
+    height: auto;
+}
+.page-wrapper {
+    max-width: 1260px;
+    min-height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header {
+    color: #fff;
+    padding: 0 12px 0 12px;
+    border-bottom: 0 !important;
+    background: url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-header-title-right.png) no-repeat right bottom;
+    background-size: 162px;
+}
+
+.dirt {
+    background: url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-header-title-dirt.png) no-repeat center;
+    width: 100%;
+    height: 64px;
+}
+.common-box {
+    padding: 20px 0 20px 0;
+}
+.center-align {
+    text-align: center;
+}
+
+body, button, input, select, textarea {
+    text-rendering: optimizeLegibility;
+}
+
+#header .logo {
+    height: auto;
+    width: auto;
+    padding-top: 0px;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+
+.search-wrapper {
+    background: #eff0f4;
+    padding: 20px 12px 20px 12px;
+    border: 0;
+    position: relative;
+}
+
+.search-input {
+    border: 0 !important;
+    padding: 13px 45px 13px 15px !important;
+    border-radius: 4px 0 0 4px !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    padding: 8px 8px 8px 32px;
+    border: 1px solid #ccd1d7;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+
+.icon-search {
+    color: #c4c4c4;
+    border: none;
+    padding: 7px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.content-wrapper {
+    padding-top: 30px;
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.section-title a, .section-title, .answer-title, .search-title {
+    color: #47bffb;
+    font-weight: 500 !important;
+    font-size: 26px;
+}
+
+.section-title:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: none;
+    background-color: #f15b22;
+    width: auto;
+    height: auto;
+}
+
+.section-title {
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+.product-list, .payment-list {
+    list-style: none;
+}
+
+ol, ul {
+    /*padding-left: 20px;*/
+}
+
+.product-list li {
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 0;
+}
+
+.product-list a {
+    color: #444;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.content a {
+    -webkit-transition: opacity linear .1s;
+    transition: opacity linear .1s;
+}
+
+.product-list a {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.product-list .all-questions {
+    color: #999;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.product-list label, .payment-list label {
+    width: 100%;
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-list label {
+    transition: all 0.3s cubic-bezier(.25, 1, .25, 1);
+    border: 8px solid transparent;
+}
+
+.product-list label:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border: 8px solid #95c9ff;
+    background-color: #95c9ff;
+}
+
+.payment-list label:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.product-list img, .payment-list img {
+    width: 100%;
+}
+
+.product-list img {
+    box-shadow: 0 0 4px 0 #999999;
+    border-radius: 5px;
+}
+
+.product-list input[type="radio"], .payment-list input[type="radio"] {
+    display: none;
+    z-index: 999;
+}
+
+.product-list input[type="radio"]:checked + label {
+    background: #fff799;
+    border: 8px solid #fff799;
+    box-shadow: 0 0 2px 2px #5ac54f;
+    border-radius: 8px;
+    z-index: 99;
+}
+
+.payment-list input[type="radio"]:checked + label {
+    /*outline: 6px solid #99e65f;*/
+    /*border-radius: 8px;*/
+    box-shadow: 0 0 0 8px #99e65f;
+    z-index: 99;
+    background: url("https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-pay-select.png") no-repeat bottom right;
+}
+
+.payment-list li {
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 0;
+}
+
+.text-capitalize.text-center.method {
+    color: #999999;
+    position: absolute;
+    width: 100%;
+    bottom: 35%;
+    left: 0;
+}
+
+.section-image .full-width {
+    width: 100%;
+}
+
+.help-block.cursor {
+    cursor: pointer;
+}
+
+.column {
+    padding-bottom: 0;
+    /*padding-right: 40px;*/
+}
+
+/*.column:nth-child(3n+1) {*/
+/*    clear: both;*/
+/*}*/
+
+#platform.dropdown-menu {
+    padding: 10px;
+}
+
+#platform li {
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+.answer-footer {
+    color: #999;
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.answer {
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+    color: #444 !important;
+}
+
+.answer span, .answer font, .answer a, .answer b {
+    font-family: CenturyGothic !important;
+    font-size: 14px !important;
+}
+
+.section-label {
+    font-size: 12px;
+    color: #999;
+    margin-top: -2px;
+}
+
+.breadcrumb {
+    padding: 5px 15px;
+}
+
+.breadcrumb li {
+    font-size: 14px;
+}
+
+.text-danger-wrapper {
+    padding: 10px 25px 10px 25px;
+    background: #FFCDD2;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+}
+
+.text-success-wrapper {
+    padding: 10px;
+    background: #C8E6C9;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+}
+
+.grow-button {
+    background-color: #60d7f2 !important;
+    border-color: #60d7f2 !important;
+}
+
+.grow-button-pay {
+    background-color: #19be19 !important;
+    border-color: #19be19 !important;
+}
+
+p {
+    color: #000;
+}
+
+.section-title h2 {
+    color: #60d7f2;
+}
+
+.thank-you h2 {
+    border-bottom: 1px solid #60d7f2;
+    padding-bottom: 5px;
+}
+.thank-you.failed h2 {
+    color: #797979;
+    border-bottom: 1px solid #797979;
+    padding-bottom: 5px;
+}
+.panel.thankyou-success {
+    background: url("https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-thankyou-banner.png") repeat-y;
+}
+.panel.thankyou-failed {
+    background: url("https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-orderfail-banner.png") repeat-y;
+}
+.panel .text-capitalize.text-center.price {
+    /*bottom: 12%;*/
+    transform: translateY(45%);
+}
+.panel .text-capitalize.text-center.price p {
+    font-size: 24px;
+}
+.panel .product-detail {
+    padding: 10px;
+    text-align: center;
+}
+.panel .product-detail label {
+    border: 5px solid #FFF;
+    border-radius: 8px;
+    background: #FFF;
+    margin-bottom: 0;
+}
+.panel .product-detail .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.panel .desc {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+}
+.panel .desc p {
+    text-align: left;
+    color: #ffffff !important;
+}
+#footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-table;
+}
+
+/*#footer {*/
+/*    background: url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-footer-bg-mountain.png) repeat-x bottom;*/
+/*    background-size: contain;*/
+/*    padding-bottom: 5%;*/
+/*    */
+/*}*/
+
+
+.copy-right a, .copy-right {
+    text-decoration: none;
+    color: #000;
+    font-family: CenturyGothicNormal, serif;
+    font-weight: 700;
+}
+
+#footer .link li:nth-child(1) {
+    border-left: none;
+}
+
+#footer .link li {
+    padding: 0 5px;
+    border-left: 1px solid #000;
+    float: left;
+    display: inline;
+}
+
+#footer .link li a {
+    color: #000;
+    text-decoration: none;
+    font-family: CenturyGothicNormal;
+}
+
+#consentModal .grow-button {
+    margin: 2px;
+}
+
+.cookie-consent {
+    text-align: left;
+    opacity: 0.9;
+    background: none repeat scroll 0 0 rgba(20, 16, 16, 0.8);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 80%;
+    z-index: 100000;
+    margin: 0 0 0 10%;
+    padding: 10px;
+    display: none;
+}
+
+.cookie-consent span img {
+    float: left;
+    margin: 0 10px 0 0;
+    background: white;
+}
+
+.cookie-consent button.grow-button {
+    background-color: #60d7f2 !important;
+    border-color: #60d7f2 !important;
+    padding: 5px;
+    font-size: 12px !important;
+    float: right;
+}
+
+.withdraw-cookie-consent {
+    text-align: left;
+    opacity: 0.9;
+    background: none repeat scroll 0 0 rgba(51, 51, 51, 0.3);
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    width: auto;
+    z-index: 100000;
+    padding: 10px;
+    display: none;
+}
+
+.withdraw-cookie-consent a, .withdraw-cookie-consent a:active, .withdraw-cookie-consent a:focus, .withdraw-cookie-consent a:hover {
+    color: #000;
+    text-decoration: none;
+    font-weight: unset;
+}
+
+.text-capitalize.text-center.price {
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    width: 100%;
+}
+
+.price p {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.product-list .popover, .product-list .popover-title, .product-list .popover-content {
+    background-color: #153b5ee6;
+    font-family: CenturyGothic;
+    color: #FFF;
+    border-bottom: none;
+}
+
+.product-list .popover-title {
+    padding: 8px 14px 0 14px;
+}
+
+.product-list .popover-content {
+    border-radius: 0 0 6px 6px;
+    padding: 5px 14px;
+    font-size: 14px;
+}
+
+.product-list .popover {
+    border: 6px solid #95c9ffb3;
+    background-color: #95c9ffb3;
+}
+
+.payment-list label, .payment-list label:hover  {
+    box-shadow: 0 0 0 8px #d7d7d7;
+}
+
+.product-list .popover.bottom > .arrow {
+    border-bottom-color: #95c9ffb3;
+    border-width: 20px;
+    top: -39px;
+    margin-left: -11px;
+}
+
+.product-list .popover.bottom > .arrow:after {
+    border-bottom-color: #153b5ee6;
+    top: 10px;
+    margin-left: -10px;
+}
+
+.title-payment p, .title-method p {
+    color: #43b427;
+    border-bottom: 1px solid #43b427;
+    font-size: 22px;
+}
+.title-method p {
+    margin-bottom: 25px;
+}
+
+.product-list-popup .modal-content{
+    border: 6px solid #87B8CC;
+    background-color: rgba(21, 59, 94, 0.90);
+    color: #FFF;
+}
+.product-list-popup .modal-content h3 {
+    color: #FFF;
+}
+.product-list-popup .modal-content .close {
+    color: #FFF;
+    text-shadow: none;
+    opacity: 1;
+}
+.product-list-popup .modal-content .modal-header,.product-list-popup .modal-content .modal-footer {
+    border: none;
+}
+.product-list-popup .modal-content .get-title {
+    color: #49FC00;
+}
+.product-list-popup .modal-content .get-description {
+    color: #EBB7FF;
+}
+.product-list-popup.modal.in .modal-dialog {
+    transform: translate(0, 20%);
+}
+.modal-open {
+    overflow: auto;
+}
+@media only screen and (min-width: 1024px) {
+    body .search-wrapper {
+        padding: 20px 20px 20px 30px;
+    }
+}
+
+@media screen and (max-height : 425px) and (max-width : 900px) {
+    .text-capitalize.text-center.method {
+        bottom: 35%;
+    }
+    .header .title {
+        color: #ffffff;
+        text-shadow: 1px 1px 3px #000;
+        font-size: 18pt;
+        padding-top: 20px;
+        text-transform: uppercase;
+    }
+}
+/* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #37393e;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #37393e;
+    color: white;
+  }
+
+li {
+  float: right;
+}
+
+li .a2 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #313336;
+}
+
+li .a2:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: #06558a;
+}
+
+h1 h2 h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h4 {
+    margin:3;
+}
+
+.main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-top: 140px;
+    max-width: 660px;
+}
+
+.mainsub {
+    position: relative;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 3px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-top: 100px;
+    max-width: 660px;
+}
+
+.error {
+    border-radius: .25rem;
+    background-color: #FFCDD2;
+    margin: 3px;
+    color: #a94442;
+}
+
+.success {
+    border-radius: .25rem;
+    background-color: #C8E6C9;
+    margin: 3px;
+    color: #3c763d;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    color: #0663c7;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
+
+.form-text {
+    display: block;
+    margin-top: .25rem;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.text-danger {
+    color: #dc3545!important;
+}
+
+.text-success {
+    color: #28a745!important;
+}
+
+.table-bordered, .table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+.table-responsive>.table-bordered {
+    border: 0;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 2px;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd):hover {
+    background-color: rgba(0,0,0,.07);
+}
+
+*[data-href] {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    #wrap {
+        background-size: 120%;
+    }
+
+    .column {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .content {
+        padding: 18px 20px;
+    }
+
+    .header .title {
+        color: #ffffff;
+        text-shadow: 1px 1px 3px #000;
+        font-size: 18pt;
+        padding-top: 20px;
+        text-transform: uppercase;
+    }
+
+    .header {
+        background-size: 150px;
+    }
+
+    .section-title a, .section-title, .answer-title, .search-title {
+        color: #47bffb;
+        font-weight: 500 !important;
+        font-size: 20px;
+    }
+
+    .faq-list a {
+        color: #444;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1;
+    }
+
+    .text-capitalize.text-center.price, .text-capitalize.text-center.method {
+        bottom: 15%;
+    }
+    .panel .product-detail label {
+        border-width: 3px;
+    }
+    .panel .text-capitalize.text-center.price {
+        bottom: 12%;
+    }
+    #header .logo a img {
+        width: 175px;
+    }
+    .panel.thankyou-success {
+        background: url("https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-thankyou-banner-mobile.png") repeat-y center;
+    }
+    .panel.thankyou-failed {
+        background: url("https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-orderfail-banner-mobile.png") repeat-y center;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .header {
+        padding: 0 25px 0 25px;
+    }
+
+    .header .title {
+        color: #fff;
+        font-size: 30px;
+        padding: 22px 7px 7px 7px;
+        text-transform: uppercase;
+        background: url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-header-title-mid.png) no-repeat center 20px;
+        background-size: 35%;
+    }
+
+    .search-wrapper {
+        background: #eff0f4;
+        padding: 20px 30px 20px 30px;
+        max-height: 100px;
+    }
+
+    .content {
+        padding: 20px 30px;
+    }
+
+    .section-title a, .section-title, .answer-title, .search-title {
+        font-weight: 500 !important;
+        color: #47bffb;
+    }
+
+    .section-title a:hover, .section-title:hover, .answer-title:hover,
+    .search-title:hover {
+        text-decoration: none;
+        color: rgba(71, 191, 251, 0.8);
+    }
+
+    .support-wrapper {
+        background: transparent;
+    }
+
+    .support-wrapper .nav > li > a:focus, .nav > li > a:hover {
+        background: transparent;
+    }
+
+    .support-wrapper a {
+        margin-top: 10px;
+        color: #FFF;
+    }
+
+    .support-wrapper a:hover {
+        color: #f15b22;
+    }
+}
+
+/* ipad pro */
+@media only screen and (width: 1366px) and (height: 1024px) {
+    .header .title {
+        background-size: 30%;
+    }
+}
+
+/* ipad */
+@media only screen and (width: 1024px) and (height: 768px) {
+    .header .title {
+        background-size: 35%;
+        font-size: 25px;
+    }
+}
+@media only screen and (width: 768px) and (height: 1024px) {
+    .header .title {
+        color: #fff;
+        font-size: 30px;
+        padding: 22px 7px 7px 7px;
+        text-transform: uppercase;
+        background: url(https://s3.eu-west-1.amazonaws.com/cdn.growtopiagame.com/website/resources/assets/images/gt-header-title-mid.png) no-repeat center 20px;
+        background-size: 70%;
+    }
+    .text-capitalize.text-center.method {
+        bottom: 35%;
+    }
+    .panel .text-capitalize.text-center.price {
+        bottom: 15%;
+    }
+}
+
+@media only screen and (width: 823px) and (height: 411px) {
+    .panel .text-capitalize.text-center.price {
+        transform: translateY(42%);
+    }
+}
